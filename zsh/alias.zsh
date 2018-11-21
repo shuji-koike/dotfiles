@@ -46,7 +46,7 @@ alias fetch='git fetch'
 alias push='git push'
 alias pull='git pull'
 alias wip='git add . && git wip'
-alias branch-clean='git branch --merged master | grep -v master | xargs -n1 git branch -D'
+alias branch-clean='git branch --merged origin/master | grep -v master | xargs -n1 git branch -D'
 alias stash='git stash -u'
 alias pop='git stash pop'
 
