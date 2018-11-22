@@ -2,3 +2,7 @@
 # https://github.com/jonas/tig/blob/master/tigrc
 
 set main-view-id = yes
+set main-view-date = relative-compact
+
+set tab-size = 4
+set line-graphics = utf-8
