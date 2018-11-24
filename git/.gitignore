@@ -1,3 +1,6 @@
+.gitconfig
+*.gitignore.*
+
 .DS_Store
 *.swp
 .nfs*
