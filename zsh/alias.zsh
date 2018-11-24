@@ -38,9 +38,10 @@ alias v='vim'
 alias y=yarn
 alias z='. ~/.zshrc && . ~/.zshrc.local'
 
-alias aa='git add . && git aa'
+alias aa='git diff && git add . && git aa'
 alias co='git co'
 alias st='git st'
+alias dff='git difftool'
 alias diff-origin='git difftool origin/$(git rev-parse --abbrev-ref HEAD) HEAD'
 alias fetch='git fetch'
 alias push='git push'
@@ -66,6 +67,8 @@ alias upgrade='brew update && brew upgrade && brew cleanup && brew leaves'
 alias cask='brew cask'
 
 alias e2e='yarn test:e2e'
+
+alias sss='screen -R'
 
 alias ppp='echo -n `pwd` | pbcopy'
 alias j2y='json2yaml'
