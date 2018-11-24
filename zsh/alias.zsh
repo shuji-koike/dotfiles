@@ -38,7 +38,7 @@ alias v='vim'
 alias y=yarn
 alias z='. ~/.zshrc && . ~/.zshrc.local'
 
-alias aa='git diff && git add . && git commit --amend -a --no-edit'
+alias aa='git diff; git add . && git commit --amend -a --no-edit'
 alias co='git checkout'
 alias st='git status'
 alias dff='git difftool'
