@@ -1,6 +1,6 @@
 alias images='docker images'
 alias images-names='docker images --format "{{.Repository}}:{{.Tag}}"'
-alias images-pull='docker images --format "{{.Repository}}:{{.Tag}}" | grep -v ":<none>"  | grep -v "k8s.gcr.io" | grep -v "docker/kube" | xargs -n1 docker pull'
+alias images-pull='docker images --format "{{.Repository}}:{{.Tag}}" | grep -v ":<none>"  | grep -v "/" | xargs -n1 docker pull'
 alias images-clean='docker system prune -f'
 
 alias containers-clean='docker rm $(docker ps -qa --filter status=exited)'
@@ -11,6 +11,7 @@ alias di='docker images'
 alias dp='docker ps -a'
 alias dt='docker logs --tail 10 -f'
 
+alias dc='docker-compose'
 alias up='docker-compose up --detach --remove-orphans'
 alias down='docker-compose down'
 
