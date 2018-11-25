@@ -54,6 +54,11 @@ if [ -d "/home/linuxbrew/.linuxbrew" ]; then
   # export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 fi
 
+# node_modules
+if [ -d ${HOME}/node_modules/.bin ]; then
+  export PATH="$PATH:${HOME}/node_modules/.bin"
+fi
+
 # N
 if [ -d ${HOME}/.n ]; then
   export N_PREFIX=${HOME}/.n
