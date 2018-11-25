@@ -15,10 +15,6 @@ if [ -d "/usr/local/opt/go" ]; then
   export GOPATH="/usr/local/opt/go"
 fi
 
-# original commands
-[ -d ${HOME}/bin ] && export PATH="${HOME}/bin:${PATH}"
-[ -d ${HOME}/Applications/bin ] && export PATH="${HOME}/Applications/bin:${PATH}"
-
 # java
 if [ -e "/usr/libexec/java_home" ]; then
   export JAVA_HOME=$(/usr/libexec/java_home -v "1.8")
