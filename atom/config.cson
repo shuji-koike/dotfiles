@@ -57,6 +57,10 @@
   "linter-ui-default":
     decorateOnTreeView: "Files and Directories"
   "platformio-ide-terminal":
+    core:
+      shellEnv: "ZSH_QUICK=1"
+    style:
+      animationSpeed: 0
     toggles:
       autoClose: true
       runInsertedText: false
