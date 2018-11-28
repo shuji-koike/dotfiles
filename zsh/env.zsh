@@ -37,6 +37,11 @@ fi
 # Docker
 command -v docker-machine >/dev/null 2>&1 && eval $(docker-machine env 2>/dev/null)
 
+# gcp
+if [ -d /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin ]; then
+  export PATH="$PATH:/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin"
+fi
+
 # hadoop
 if [ -d "/usr/local/opt/hadoop" ]; then
   export HADOOP_HOME="/usr/local/opt/hadoop/libexec"
