@@ -14,6 +14,7 @@ alias dt='docker logs --tail 10 -f'
 alias dc='docker-compose'
 alias up='docker-compose up --detach --remove-orphans'
 alias down='docker-compose down'
+alias logs='docker-compose logs --tail 10 -f'
 
 alias docker-host-shell="screen ${HOME}/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty"
 
