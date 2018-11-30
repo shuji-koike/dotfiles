@@ -38,7 +38,7 @@
 	fm = fetch origin master:master
 	gg = grep --line-number --show-function --heading --break
 	mm = merge origin/master
-	pf = push -f
+	pf = push --force-with-lease
 	re = reset --soft HEAD~
 	rh = reset --hard
 	ri = rebase -i
