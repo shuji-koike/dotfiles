@@ -23,6 +23,7 @@ fi
 . ~/.zsh/env.zsh
 . ~/.zsh/misc.zsh
 . ~/.zsh/docker.zsh
+. ~/.zsh/gcloud.zsh
 . ~/.zsh/ruby.zsh
 
 # override with zshrc.local
