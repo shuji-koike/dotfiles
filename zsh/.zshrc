@@ -23,6 +23,7 @@ fi
 . ~/.zsh/env.zsh
 . ~/.zsh/misc.zsh
 . ~/.zsh/docker.zsh
+. ~/.zsh/kubectl.zsh
 . ~/.zsh/gcloud.zsh
 . ~/.zsh/ruby.zsh
 
