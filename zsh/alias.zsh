@@ -53,6 +53,7 @@ alias wip='git add . && git commit -a -m "[ci skip] WIP WIP WIP WIP WIP"'
 alias branch-clean='git branch --merged origin/master | grep -v master | xargs -n1 git branch -D'
 alias stash='git stash -u'
 alias pop='git stash pop'
+alias stage='git push -f origin HEAD:staging'
 
 alias gh='github'
 
