@@ -14,6 +14,9 @@ fi
 if [ -d "/usr/local/opt/go" ]; then
   export GOPATH="/usr/local/opt/go"
 fi
+if ! [ -z $GOPATH ]; then
+  export PATH="$GOPATH/bin:$PATH"
+fi
 
 # java
 if [ -e "/usr/libexec/java_home" ]; then
