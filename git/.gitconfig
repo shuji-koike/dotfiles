@@ -52,6 +52,8 @@
 	shallow = clone --depth 1
 [fetch]
 	prune = true
+[pull]
+	rebase = preserve
 [filter "media"]
 	required = true
 	clean = git media clean %f
