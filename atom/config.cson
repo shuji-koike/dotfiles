@@ -39,11 +39,12 @@
   linter:
     lintOnChangeInterval: 3000
   "linter-eslint":
-    fixOnSave: true
+    autofix:
+      fixOnSave: true
+      rulesToDisableWhileFixing: [
+        "no-debugger"
+      ]
     lintHtmlFiles: true
-    rulesToDisableWhileFixing: [
-      "no-debugger"
-    ]
     scopes: [
       "source.js"
       "source.jsx"
