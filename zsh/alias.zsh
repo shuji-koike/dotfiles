@@ -70,6 +70,13 @@ alias restart='brew services restart'
 alias upgrade='brew update && brew upgrade && brew cleanup && brew leaves'
 alias cask='brew cask'
 
+if [ -e /bin/systemctl ]; then
+  alias sl='sudo systemctl'
+  alias start='sudo systemctl start'
+  alias stop='sudo systemctl stop'
+  alias restart='sudo systemctl restart'
+fi
+
 alias e2e='yarn test:e2e'
 
 alias sss='screen -R'
