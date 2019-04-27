@@ -66,3 +66,7 @@ tmp.*
 
 .aws
 .vscode
+
+#--
+
+*.dem
