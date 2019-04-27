@@ -11,7 +11,9 @@ if [ -d ${HOME}/.pyenv ]; then
 fi
 
 # go
-if [ -d "/usr/local/opt/go" ]; then
+if [ -d "$HOME/go" ]; then
+  export GOPATH="$HOME/go"
+elif [ -d "/usr/local/opt/go" ]; then
   export GOPATH="/usr/local/opt/go"
 fi
 if ! [ -z $GOPATH ]; then
