@@ -62,12 +62,13 @@ alias rx='rbenv exec'
 alias bx='bundle exec'
 alias nx='npx nodemon -x'
 
+alias bl='brew leaves'
 alias sl='brew services list'
 alias run='brew services run'
 alias start='brew services start'
 alias stop='brew services stop'
 alias restart='brew services restart'
-alias upgrade='brew update && brew upgrade && brew cleanup && brew leaves'
+alias upgrade='brew update && brew upgrade && brew cleanup && brew doctor'
 alias cask='brew cask'
 
 if [ -e /bin/systemctl ]; then
