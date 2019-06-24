@@ -22,12 +22,13 @@ ln -sf .dotfiles/vim/.vimrc
 touch .zshrc.local
 
 chmod 400 .zshrc
+
+# sudo chsh -s /bin/zsh $(whoami)
 ```
 
 ## that's it!
 
 :trollface:
-
 
 ## want more?
 
@@ -43,12 +44,13 @@ brew bundle
 
 ### atom
 
-``` sh
+```sh
 ln -sf .dotfiles/atom .atom
 apm stars --install
 ```
+
 ### hyper
 
-``` sh
+```sh
 ln -sf .dotfiles/.hyper.js
 ```
