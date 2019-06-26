@@ -1,10 +1,11 @@
-# export PATH="/usr/local/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
-# export PATH="/usr/libexec:$PATH"
-
 if [ -e /etc/profile ] ; then
+  export PATH=""
   . /etc/profile
 fi
+
+export PATH="/usr/local/sbin:$PATH"
+
+export CDPATH="$HOME/github.com"
 
 # fpath
 if [ -d "/usr/local/share/zsh/site-functions" ]; then
