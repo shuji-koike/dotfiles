@@ -1,5 +1,5 @@
 if [ -e /etc/profile ] ; then
-  export PATH=""
+  export PATH="/usr/bin:/bin"
   . /etc/profile
 fi
 
