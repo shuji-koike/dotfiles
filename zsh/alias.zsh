@@ -68,7 +68,7 @@ alias run='brew services run'
 alias start='brew services start'
 alias stop='brew services stop'
 alias restart='brew services restart'
-alias upgrade='brew update && brew upgrade && brew cleanup && brew doctor'
+alias upgrade='brew update && brew upgrade && brew cask upgrade && brew cleanup && brew doctor'
 alias cask='brew cask'
 
 if [ -e /bin/systemctl ]; then
