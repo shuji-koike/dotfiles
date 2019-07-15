@@ -50,9 +50,8 @@ fi
 
 # linuxbrew
 if [ -d "/home/linuxbrew/.linuxbrew" ]; then
-  function brew { su - linuxbrew -c "brew $1 $2 $3 $4" }
-  # export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin"
-  # export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+  export PATH="/home/linuxbrew/.linuxbrew/Homebrew/Library/Homebrew/vendor/portable-ruby/current/bin:$PATH"
+  eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 fi
 
 # node_modules
