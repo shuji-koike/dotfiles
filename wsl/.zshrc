@@ -20,3 +20,5 @@ eval "$(ssh-agent -s) ssh-add" > /dev/null 2>&1
 export DISPLAY="127.0.0.1:0.0"
 
 eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
+
+source ~/.zshrc.secrete
