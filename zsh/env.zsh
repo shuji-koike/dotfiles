@@ -1,3 +1,9 @@
+# linuxbrew
+if [ -d "/home/linuxbrew/.linuxbrew" ]; then
+  export PATH="/home/linuxbrew/.linuxbrew/Homebrew/Library/Homebrew/vendor/portable-ruby/current/bin:$PATH"
+  eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+fi
+
 # rbenv
 if [ -d ${HOME}/.rbenv ]; then
   eval "$(rbenv init -)"
@@ -46,12 +52,6 @@ command -v docker-machine >/dev/null 2>&1 && eval $(docker-machine env 2>/dev/nu
 if [ -d "/usr/local/opt/hadoop" ]; then
   export HADOOP_HOME="/usr/local/opt/hadoop/libexec"
   export HADOOP_CONF_DIR="$HADOOP_HOME/etc/hadoop"
-fi
-
-# linuxbrew
-if [ -d "/home/linuxbrew/.linuxbrew" ]; then
-  export PATH="/home/linuxbrew/.linuxbrew/Homebrew/Library/Homebrew/vendor/portable-ruby/current/bin:$PATH"
-  eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 fi
 
 # node_modules
