@@ -1,4 +1,5 @@
 export WINDOWS_USER="$(/mnt/c/Windows/System32/cmd.exe /c echo %USERNAME%)"
+export WINDOWS_USER="${WINDOWS_USER//[$'\r\n']}"
 
 cd "$HOME"
 umask 002
