@@ -7,3 +7,4 @@ storage
 .apm
 .node-gyp
 .npm
+.atom-socket-secret-*
