@@ -36,6 +36,9 @@
     showIndentGuide: true
     showInvisibles: true
     undoGroupingInterval: 1000
+  "fuzzy-finder":
+    scoringSystem: "fast"
+    useRipGrep: true
   linter:
     lintOnChangeInterval: 3000
   "linter-eslint":
