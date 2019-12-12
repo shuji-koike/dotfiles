@@ -21,7 +21,7 @@ ln -sf .dotfiles/vim/.vimrc
 
 touch .zshrc.local
 
-chmod 400 .zshrc
+chmod 400 .zshrc .zshrc.local .zsh-history
 
 # sudo chsh -s /bin/zsh $(whoami)
 ```
