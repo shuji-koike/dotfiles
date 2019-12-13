@@ -48,6 +48,14 @@ ln -sf .dotfiles/atom .atom
 apm stars --install
 ```
 
+### vscode
+
+```sh
+cd ~/Library/Application\ Support/Code/User
+ln -sf ~/.dotfiles/vscode/settings.json
+ln -sf ~/.dotfiles/vscode/keybindings.json
+```
+
 ### hyper
 
 ```sh

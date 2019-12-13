@@ -1,0 +1,6 @@
+[
+  {
+    "key": "cmd+[IntlYen]",
+    "command": "workbench.files.action.showActiveFileInExplorer"
+  }
+]
