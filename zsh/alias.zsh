@@ -88,3 +88,4 @@ alias j2y='json2yaml'
 alias y2j='yaml2json'
 
 alias z-reload='. ~/.zshrc && . ~/.zshrc.local'
+alias .env='set -a; source .env; set +a;'
