@@ -21,6 +21,7 @@ vender/bundle
 node_modules
 bower_components
 flow-typed
+.bundle
 
 #--
 
