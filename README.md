@@ -4,13 +4,13 @@ https://dotfiles.github.io/
 
 ## clone!
 
-```shell
+```sh
 git clone git@github.com:shuji-koike/dotfiles.git ~/.dotfiles
 ```
 
 ## link!
 
-```shell
+```sh
 ln -sf .dotfiles/zsh .zsh
 ln -sf .zsh/.zshrc
 ln -sf .dotfiles/git/.gitconfig
