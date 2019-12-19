@@ -30,8 +30,6 @@ fi
 if [ -e "/usr/libexec/java_home" ]; then
   export JAVA_HOME=$(/usr/libexec/java_home -v "1.8")
   export PATH=${JAVA_HOME}/bin:${PATH}
-  export SBT_OPTS="$JAVA_OPTS"
-  export PLAY_OPTS="$JAVA_OPTS"
 fi
 
 # jenv
