@@ -4,7 +4,7 @@
 	excludesfile = ~/.gitignore
 	editor = vim -c \"set fenc=utf-8\"
 	ignorecase = false
-	quotepath = true
+	quotepath = false
 [color]
 	ui = auto
 [push]
