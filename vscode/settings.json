@@ -7,7 +7,6 @@
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "boundary",
   "editor.scrollBeyondLastLine": false,
-  "eslint.autoFixOnSave": true,
   "explorer.autoReveal": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -41,5 +40,8 @@
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
   }
 }
