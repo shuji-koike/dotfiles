@@ -11,6 +11,7 @@ alias di='docker images'
 alias dp='docker ps -a'
 alias dt='docker logs --tail 10 -f'
 alias dv='docker volume ls'
+alias dx='docker run -it --rm'
 
 alias dc='docker-compose'
 alias up='docker-compose up --detach --remove-orphans'

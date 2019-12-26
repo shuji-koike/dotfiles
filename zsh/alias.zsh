@@ -58,7 +58,6 @@ alias stage='git push -f origin HEAD:staging'
 
 alias gh='github'
 
-alias dx='docker run -it --rm'
 alias rx='rbenv exec'
 alias bx='bundle exec'
 alias nx='npx nodemon -x'
