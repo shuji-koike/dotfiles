@@ -43,5 +43,6 @@
   },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+  "breadcrumbs.enabled": false
 }
