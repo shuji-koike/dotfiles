@@ -1,9 +1,7 @@
 {
   "editor.emptySelectionClipboard": true,
   "editor.fontSize": 14,
-  "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "editor.formatOnType": true,
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "boundary",
   "editor.scrollBeyondLastLine": false,
@@ -29,7 +27,6 @@
   "workbench.editor.enablePreview": false,
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.statusBar.feedback.visible": false,
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always",
   "[html]": {
@@ -44,5 +41,18 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "breadcrumbs.enabled": false
+  "breadcrumbs.enabled": false,
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.find.addExtraSpaceOnTop": false
 }
