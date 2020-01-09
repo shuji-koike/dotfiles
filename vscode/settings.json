@@ -17,7 +17,6 @@
   "git.autofetch": true,
   "git.confirmSync": false,
   "go.formatTool": "goimports",
-  "terminal.integrated.fontSize": 16,
   "window.zoomLevel": 1,
   "workbench.colorCustomizations": {
     "statusBar.background": "#1A1A1A",
@@ -54,5 +53,6 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.find.addExtraSpaceOnTop": false
+  "editor.find.addExtraSpaceOnTop": false,
+  "terminal.integrated.fontSize": 9
 }
