@@ -54,5 +54,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.find.addExtraSpaceOnTop": false,
-  "terminal.integrated.fontSize": 9
+  "terminal.integrated.fontSize": 9,
+  "editor.tabSize": 2,
+  "go.useLanguageServer": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true
 }

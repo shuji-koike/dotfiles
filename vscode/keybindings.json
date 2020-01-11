@@ -2,5 +2,13 @@
   {
     "key": "cmd+[IntlYen]",
     "command": "workbench.files.action.showActiveFileInExplorer"
+  },
+  {
+    "key": "cmd+r cmd+r",
+    "command": "browserRefresh.refresh"
+  },
+  {
+    "key": "cmd+r",
+    "command": "browserRefresh.refresh"
   }
 ]
