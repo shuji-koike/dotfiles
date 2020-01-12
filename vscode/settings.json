@@ -58,5 +58,6 @@
   "editor.tabSize": 2,
   "go.useLanguageServer": true,
   "editor.formatOnPaste": true,
-  "editor.formatOnType": true
+  "editor.formatOnType": true,
+  "diffEditor.renderSideBySide": false
 }
