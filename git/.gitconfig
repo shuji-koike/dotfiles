@@ -7,8 +7,14 @@
 	quotepath = false
 [color]
 	ui = auto
+[fetch]
+	prune = true
+[pull]
+	rebase = preserve
 [push]
 	default = current
+[rebase]
+	autosquash = true
 [difftool]
 	prompt = false
 [mergetool]
@@ -51,10 +57,6 @@
 	wip = commit -a -m \"[ci skip] WIP WIP WIP WIP WIP\"
 	amend = commit --amend --no-edit
 	shallow = clone --depth 1
-[fetch]
-	prune = true
-[pull]
-	rebase = preserve
 [filter "media"]
 	required = true
 	clean = git media clean %f
