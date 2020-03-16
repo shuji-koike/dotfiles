@@ -4,5 +4,8 @@
 set main-view-id = yes
 set main-view-date = relative-compact
 
+set refs-view-id = yes
+set refs-view-date = relative-compact
+
 set tab-size = 4
 set line-graphics = utf-8
