@@ -1,9 +1,13 @@
+PR=${PR:-$1}
+OWNER=$(git remote get-url origin | tr : / | awk '-F[/]' '{print $2}')
+REPO=$(git remote get-url origin | tr : / | awk '-F[/]' '{print $3}' | sed -e 's/.git$//')
+echo $PR
 curl \
   -X POST \
   -H "Authorization: bearer $GITHUB_TOKEN" \
   -d "{\"query\": $(jq -aRs <<END
 query {
-  repository(owner: "mvrck-inc", name: "cirqua") {
+  repository(owner: "$OWNER", name: "$REPO") {
     pullRequest(number: $PR) {
       commits(first: 250) {
         nodes {
