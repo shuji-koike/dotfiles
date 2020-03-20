@@ -1,8 +1,7 @@
 PR=${PR:-$1}
 OWNER=$(git remote get-url origin | tr : / | awk '-F[/]' '{print $2}')
 REPO=$(git remote get-url origin | tr : / | awk '-F[/]' '{print $3}' | sed -e 's/.git$//')
-echo $PR
-curl \
+curl -s \
   -X POST \
   -H "Authorization: bearer $GITHUB_TOKEN" \
   -d "{\"query\": $(jq -aRs <<END
