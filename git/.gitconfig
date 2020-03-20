@@ -10,7 +10,7 @@
 [fetch]
 	prune = true
 [pull]
-	rebase = preserve
+	rebase = true
 [push]
 	default = current
 [rebase]
