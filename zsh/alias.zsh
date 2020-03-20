@@ -17,7 +17,7 @@ alias c=pbcopy
 alias d=docker
 # alias e=
 alias f='git fetch'
-alias g=git
+alias g=hub
 alias h='history -E 1 | less +G'
 # alias i=
 # alias j=
@@ -56,7 +56,7 @@ alias stash='git stash -u'
 alias pop='git stash pop'
 alias stage='git push -f origin HEAD:staging'
 
-alias gh='github'
+alias gd='github'
 
 alias rx='rbenv exec'
 alias bx='bundle exec'
