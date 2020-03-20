@@ -14,6 +14,11 @@ query {
             oid
             associatedPullRequests(first: 1) {
               nodes {
+                author {
+                  ... on User {
+                    login
+                  }
+                }
                 number
                 title
               }
@@ -25,8 +30,7 @@ query {
   }
 }
 END
-)}" \
-  https://api.github.com/graphql |
+)}" https://api.github.com/graphql |
   jq '.data.repository.pullRequest.commits.nodes[].commit.associatedPullRequests.nodes[0]' |
-  jq -r '"#" + (.number | tostring) + " " + .title' |
+  jq -r '"- #" + (.number | tostring) + " " + .title + " @" + .author.login' |
   sort | uniq
