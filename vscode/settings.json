@@ -1,10 +1,22 @@
 {
+  "breadcrumbs.enabled": false,
+  "diffEditor.renderSideBySide": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.columnSelection": false,
   "editor.emptySelectionClipboard": true,
+  "editor.find.addExtraSpaceOnTop": false,
   "editor.fontSize": 14,
+  "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
+  "editor.formatOnType": true,
   "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "alt",
+  "editor.renderControlCharacters": true,
   "editor.renderWhitespace": "boundary",
   "editor.scrollBeyondLastLine": false,
+  "editor.tabSize": 2,
   "explorer.autoReveal": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -17,11 +29,16 @@
   "git.autofetch": true,
   "git.confirmSync": false,
   "go.formatTool": "goimports",
+  "go.useLanguageServer": true,
+  "npm.enableRunFromFolder": true,
+  "npm.runInTerminal": false,
+  "npm.scriptExplorerAction": "run",
+  "terminal.integrated.fontSize": 9,
   "window.zoomLevel": 1,
   "workbench.colorCustomizations": {
     "statusBar.background": "#1A1A1A",
-    "statusBar.noFolderBackground": "#212121",
-    "statusBar.debuggingBackground": "#263238"
+    "statusBar.debuggingBackground": "#263238",
+    "statusBar.noFolderBackground": "#212121"
   },
   "workbench.editor.enablePreview": false,
   "workbench.sideBar.location": "left",
@@ -37,33 +54,16 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "breadcrumbs.enabled": false,
-  "[vue]": {
-    "editor.defaultFormatter": "octref.vetur"
-  },
-  "[typescriptreact]": {
+  "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[jsonc]": {
+  "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.find.addExtraSpaceOnTop": false,
-  "terminal.integrated.fontSize": 9,
-  "editor.tabSize": 2,
-  "go.useLanguageServer": true,
-  "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
-  "diffEditor.renderSideBySide": true,
-  "editor.multiCursorModifier": "alt",
-  "editor.columnSelection": false,
-  "npm.runInTerminal": false,
-  "npm.scriptExplorerAction": "run",
-  "npm.enableRunFromFolder": true,
-  "editor.renderControlCharacters": true
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  }
 }
