@@ -28,6 +28,7 @@
   },
   "git.autofetch": true,
   "git.confirmSync": false,
+  "git.enableSmartCommit": true,
   "go.formatTool": "goimports",
   "go.useLanguageServer": true,
   "npm.enableRunFromFolder": true,
