@@ -14,11 +14,10 @@ alias dv='docker volume ls'
 alias dx='docker run -it --rm'
 
 alias dc='docker-compose'
-alias up='docker-compose up --detach --remove-orphans'
+alias up='docker-compose up --detach --remove-orphans --force-recreate'
 alias down='docker-compose down'
 alias logs='docker-compose logs --tail 10 -f'
 alias dcx='docker-compose run --rm'
-alias upp='up --force-recreate'
 
 alias docker-host-shell="screen ${HOME}/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty"
 
