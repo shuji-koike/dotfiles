@@ -54,7 +54,7 @@
 	st = status
 	su = submodule update
 	pop = stash pop
-	wip = commit -a -m \"[ci skip] WIP WIP WIP WIP WIP\"
+	wip = commit -a -m \"fixup! [ci skip] WIP WIP WIP WIP WIP\"
 	amend = commit --amend --no-edit
 	shallow = clone --depth 1
 [filter "media"]
