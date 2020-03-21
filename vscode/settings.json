@@ -59,5 +59,11 @@
   "go.useLanguageServer": true,
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
-  "diffEditor.renderSideBySide": false
+  "diffEditor.renderSideBySide": false,
+  "editor.multiCursorModifier": "alt",
+  "editor.columnSelection": false,
+  "npm.runInTerminal": false,
+  "npm.scriptExplorerAction": "run",
+  "npm.enableRunFromFolder": true,
+  "editor.renderControlCharacters": true
 }
