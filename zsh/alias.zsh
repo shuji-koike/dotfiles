@@ -13,7 +13,7 @@ alias lR='ls -lahR'
 
 alias a=atom
 alias b=brew
-alias c=pbcopy
+alias c=code
 alias d=docker
 # alias e=
 alias f='git fetch'
