@@ -56,7 +56,7 @@ alias stash='git stash -u'
 alias pop='git stash pop'
 alias stage='git push -f origin HEAD:staging'
 
-alias gd='github'
+alias gg='github'
 
 alias rx='rbenv exec'
 alias bx='bundle exec'
