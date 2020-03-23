@@ -57,5 +57,5 @@ query {
 END
 )}" |
   jq '.data.repository.pullRequest.commits.nodes[].commit.associatedPullRequests.nodes[0]' |
-  jq -r '"- #" + (.number | tostring) + " " + .title + " @" + .author.login' |
+  jq -r '"- [ ] #" + (.number | tostring) + " " + .title + " @" + .author.login' |
   sort | uniq
