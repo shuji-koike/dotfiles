@@ -1,15 +1,32 @@
+#!/usr/bin/env
+
 GITHUB_REPOSITORY=$(git remote get-url origin | awk '-F[/:.]' '{print $(NF-2) "/" $(NF-1)}')
 PR_NUM=${PR_NUM:-$1}
 
 if [[ -z "${PR_NUM}" ]]; then
-  #TODO
-  curl "https://api.github.com/repos/$(dirname ${GITHUB_REPOSITORY})/$(basename ${GITHUB_REPOSITORY})/git/commits/$(git rev-parse HEAD)"
-  curl -H "Accept: application/vnd.github.cloak-preview" \
-    "https://api.github.com/search/commits?q=hash:$(git rev-parse HEAD)%20repo:${GITHUB_REPOSITORY}"
-  exit
+  PR_NUM=$(
+  curl -s "https://api.github.com/graphql" \
+    -X POST \
+    -H "Authorization: bearer $GITHUB_TOKEN" \
+    -d "{\"query\": $(jq -aRs <<END
+query {
+  search(first: 10, query: "$(git rev-parse HEAD)", type: ISSUE) {
+    nodes {
+      ... on PullRequest {
+        number
+      }
+    }
+  }
+}
+END
+)}" | jq -r '.data.search.nodes[0].number')
+
+  if [[ $PR_NUM -eq null ]]; then
+    exit
+  fi
 fi
 
-curl -s \
+curl -s "https://api.github.com/graphql" \
   -X POST \
   -H "Authorization: bearer $GITHUB_TOKEN" \
   -d "{\"query\": $(jq -aRs <<END
@@ -38,7 +55,7 @@ query {
   }
 }
 END
-)}" https://api.github.com/graphql |
+)}" |
   jq '.data.repository.pullRequest.commits.nodes[].commit.associatedPullRequests.nodes[0]' |
   jq -r '"- #" + (.number | tostring) + " " + .title + " @" + .author.login' |
   sort | uniq
