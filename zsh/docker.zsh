@@ -3,6 +3,8 @@ alias images-names='docker images --format "{{.Repository}}:{{.Tag}}"'
 alias images-pull='docker images --format "{{.Repository}}:{{.Tag}}" | grep -v ":<none>"  | grep -v "/" | xargs -n1 docker pull'
 alias images-clean='docker system prune -f'
 
+alias upgrade-docker='images-pull && images-clean'
+
 alias containers-clean='docker rm $(docker ps -qa --filter status=exited)'
 alias containers-reset='docker rm -f $(docker ps -qa)'
 
