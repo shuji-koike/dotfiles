@@ -1,5 +1,7 @@
 # autoload
+autoload -Uz add-zsh-hook
 autoload -Uz colors && colors
+autoload -Uz vcs_info
 
 # PATH
 if [ -e /etc/profile ]; then
@@ -23,6 +25,7 @@ fi
 # include
 . ~/.zsh/alias.zsh
 . ~/.zsh/prompt.zsh
+. ~/.zsh/rprompt.zsh
 . ~/.zsh/env.zsh
 . ~/.zsh/misc.zsh
 . ~/.zsh/docker.zsh
