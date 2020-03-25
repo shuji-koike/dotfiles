@@ -41,6 +41,12 @@ chmod 600 .zshrc .zshrc.local .zsh-history
 # brew bundle dump --file=/tmp/Brewfile && ksdiff /tmp/Brewfile ~/.dotfiles/Brewfile
 ```
 
+### ssh
+
+```sh
+ssh-add -K ~/.ssh/id_rsa
+```
+
 ### atom
 
 ```sh
