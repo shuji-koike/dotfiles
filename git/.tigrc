@@ -7,6 +7,10 @@ set main-view-date = relative-compact
 set refs-view-id = yes
 set refs-view-date = relative-compact
 
+set tree-view-date = relative-compact
+set blame-view-date = relative-compact
+set reflog-view-date = relative-compact
+
 set tab-size = 4
 set line-graphics = utf-8
 
