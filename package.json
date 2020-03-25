@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "google-spreadsheet-cli": "^2.0.1",
-    "nodemon": "^1.18.6"
-  }
-}
