@@ -26,7 +26,6 @@ fi
 # include
 . ~/.zsh/alias.zsh
 . ~/.zsh/prompt.zsh
-. ~/.zsh/rprompt.zsh
 . ~/.zsh/env.zsh
 . ~/.zsh/misc.zsh
 . ~/.zsh/docker.zsh
