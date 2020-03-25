@@ -19,8 +19,6 @@ setopt  auto_pushd
 setopt  pushd_ignore_dups    # スタックから重複排除
 
 setopt  correct
-autoload compinit
-compinit
 
 # {0-9a-z} -> 0 1 .. 8 9 a b .. y z
 setopt braceccl

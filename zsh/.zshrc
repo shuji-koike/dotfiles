@@ -1,6 +1,7 @@
 # autoload
 autoload -Uz add-zsh-hook
 autoload -Uz colors && colors
+autoload -Uz compinit && compinit
 autoload -Uz vcs_info
 
 # PATH
