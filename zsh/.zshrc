@@ -1,10 +1,12 @@
-if [ -e /etc/profile ] ; then
+# autoload
+autoload -Uz colors && colors
+
+# PATH
+if [ -e /etc/profile ]; then
   export PATH="/usr/bin:/bin"
   . /etc/profile
 fi
-
 export PATH="/usr/local/sbin:$PATH"
-
 export CDPATH="$HOME/github.com"
 
 # fpath
