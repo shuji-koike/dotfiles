@@ -32,6 +32,7 @@ fi
 . ~/.zsh/kubectl.zsh
 . ~/.zsh/gcloud.zsh
 . ~/.zsh/ruby.zsh
+. ~/.zsh/node.zsh
 
 # override with zshrc.local
 if [ -e ~/.zshrc.local ] ; then
