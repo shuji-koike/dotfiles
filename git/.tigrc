@@ -18,5 +18,7 @@ bind generic f @git fetch
 bind generic m @git merge %(remote) master
 bind main M !git merge %(remote) %(commit)
 bind main c @git checkout %(commit)
-bind refs c !git checkout %(commit)
+bind refs c @git checkout %(commit)
 bind refs <Ctrl-p> ?!git push %(remote) HEAD:%(branch)
+
+set mouse = true
