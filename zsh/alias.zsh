@@ -56,6 +56,7 @@ alias branch-clean='git branch --merged origin/master | grep -v master | xargs -
 alias stash='git stash -u'
 alias pop='git stash pop'
 alias stage='git push -f origin HEAD:staging'
+alias clone='git-clone.sh'
 
 alias gg='github'
 
