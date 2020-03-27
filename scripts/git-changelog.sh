@@ -1,8 +1,6 @@
-#!/usr/bin/env
-
+#!/usr/bin/env bash
 GITHUB_REPOSITORY=$(git remote get-url origin | awk '-F[/:.]' '{print $(NF-2) "/" $(NF-1)}')
 PR_NUM=${PR_NUM:-$1}
-
 if [[ -z "${PR_NUM}" ]]; then
   PR_NUM=$(
   curl -s "https://api.github.com/graphql" \
@@ -20,12 +18,10 @@ query {
 }
 END
 )}" | jq -r '.data.search.nodes[0].number')
-
-  if [[ $PR_NUM -eq null ]]; then
+  if [[ -n $PR_NUM ]]; then
     exit
   fi
 fi
-
 curl -s "https://api.github.com/graphql" \
   -X POST \
   -H "Authorization: bearer $GITHUB_TOKEN" \
