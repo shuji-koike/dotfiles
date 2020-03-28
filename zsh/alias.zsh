@@ -2,7 +2,9 @@ alias -g G='| grep '
 alias -g M='| more '
 alias tmux='tmux -u'
 
-if [ 'Darwin' = $(uname -s) ]; then
+if [ -e /usr/local/bin/exa ]; then
+  alias ls="exa -gH --git"
+elif [ 'Darwin' = $(uname -s) ]; then
   alias ls='ls -FG'   # Mac
 else
   alias ls='ls -Fv --color'  # Linux
