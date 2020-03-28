@@ -10,7 +10,10 @@ if [ -e /etc/profile ]; then
   . /etc/profile
 fi
 export PATH="/usr/local/sbin:$PATH"
-export CDPATH="$HOME/github.com"
+
+if [ -d "$HOME/github.com" ]; then
+  export CDPATH="$HOME/github.com"
+fi
 
 # fpath
 if [ -d "/usr/local/share/zsh/site-functions" ]; then
