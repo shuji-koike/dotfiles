@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e
 GITHUB_REPOSITORY=$(git remote get-url origin | awk '-F[/:.]' '{print $(NF-2) "/" $(NF-1)}')
 PR_NUM=${PR_NUM:-$1}
 if [[ -z "${PR_NUM}" ]]; then

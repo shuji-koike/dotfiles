@@ -1,4 +1,5 @@
-#!/usr/bin/env bash -eu
+#!/usr/bin/env bash
+set -eu
 [[ $# -gt 0 ]] || exit
 repo="${@: -1}"
 rootdir="${2:-$HOME}"

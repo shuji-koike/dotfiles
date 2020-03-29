@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e
 PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 rev=${1:-'HEAD~1'}
 git diff -U0 $rev | \

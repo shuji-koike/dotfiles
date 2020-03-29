@@ -1,4 +1,5 @@
-#!/usr/bin/env bash -e
+#!/usr/bin/env bash
+set  -e
 GIT_DIR="${GIT_DIR:-$1}"
 if ! [[ -d $GIT_DIR ]]; then
   "$(dirname $0)/git-list-repo.sh" | parallel $0 {}
