@@ -1,7 +1,16 @@
-# https://docs.brew.sh/Homebrew-on-Linux
+#!/usr/bin/env bash -ex
 
-# https://qiita.com/ucan-lab/items/568db1c68dab9d62169c
-yum -y install https://centos7.iuscommunity.org/ius-release.rpm
-yum-config-manager --disable ius
-yum -y remove git
-yum -y install --enablerepo=ius git2u tig
+# softwareupdate -ia
+
+if [ -n $HOST_NAME ]; then
+  echo $HOST_NAME
+  # sudo scutil --set HostName $HOST_NAME
+  # sudo scutil --set LocalHostName $HOST_NAME
+  # sudo scutil --set ComputerName $HOST_NAME
+  # dscacheutil -flushcache
+fi
+
+xcode-select --install
+
+# https://brew.sh/#install
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
