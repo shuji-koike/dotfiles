@@ -33,7 +33,6 @@
   "npm.enableRunFromFolder": true,
   "npm.runInTerminal": false,
   "npm.scriptExplorerAction": "run",
-  "terminal.integrated.fontSize": 9,
   "window.zoomLevel": 1,
   "workbench.colorCustomizations": {
     "statusBar.background": "#1A1A1A",
