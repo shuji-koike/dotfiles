@@ -1,13 +1,30 @@
-#!/bin/bash -x
+#!/usr/bin/env bash -ex
 
-cd ~/.dotfiles
-git fetch
-git checkout origin/master
+# cd ~/.dotfiles
+# git fetch
+# git checkout origin/master
 
-yum -y update
-package-cleanup --oldkernels --count=1
-rpm -qa | sort > /root/.track/rpm-list
-rpm -qa | xargs -n1 rpm -ql | sort | uniq > /root/.track/rpm-files
-rpm -qa | xargs -n1 rpm --verify --noghost | sort > /root/.track/rpm-verify
-find /bin /etc /lib /lib64 /opt /sbin /usr -type d -name .git -prune -o -print | sort > /root/.track/find-files
-cd /root && git add /root/.track && git commit -m "update"
+if [ -x "$(command -v dpkg)" ]; then
+  apt update
+  apt upgrade
+fi
+
+if [ -x "$(command -v yum)" ]; then
+  yum -y update
+  package-cleanup --oldkernels --count=1
+fi
+
+if [ -x "$(command -v brew)" ]; then
+  brew update
+  brew upgrade
+  brew cask upgrade
+  brew cleanup
+  brew doctor
+fi
+
+if [ -x "$(command -v docker)" ]; then
+  docker images --format "{{.Repository}}:{{.Tag}}" |
+    grep -v ":<none>"  |
+    grep -v "/" |
+    xargs -n1 docker pull
+fi
