@@ -14,11 +14,21 @@ set reflog-view-date = relative-compact
 set tab-size = 4
 set line-graphics = utf-8
 
-bind generic f @git fetch
-bind generic m @git merge %(remote) master
-bind main M !git merge %(remote) %(commit)
-bind main c @git checkout %(commit)
-bind refs c @git checkout %(commit)
-bind refs <Ctrl-p> ?!git push %(remote) HEAD:%(branch)
+set start-on-head = yes
 
-set mouse = true
+# set mouse = yes
+# bind generic M :toggle mouse
+
+bind generic f @git fetch
+bind main <Ctrl-w>w @git commit -a -m"fixup! [ci skip] WIP WIP WIP WIP WIP"
+bind main <Ctrl-m>m <git merge %(remote)/master
+bind main <Ctrl-r>m @git rebase %(remote)/master
+bind main <Ctrl-r>e @git reset --soft HEAD~
+bind main c @git checkout %(commit)
+bind refs c @git checkout %(branch)
+bind refs <Ctrl-p>p ?!git push %(remote) HEAD:%(branch)
+bind refs <Ctrl-p>f ?!git push -f %(remote) HEAD:%(branch)
+bind main <Ctrl-x>b @git branch -D %(branch)
+bind refs <Ctrl-x>b @git branch -D %(branch)
+bind main <Ctrl-r>i <!git rebase -i %(commit)~
+bind refs <Ctrl-r>i <!git rebase -i %(commit)~
