@@ -4,11 +4,11 @@
     "command": "workbench.files.action.showActiveFileInExplorer"
   },
   {
-    "key": "cmd+r cmd+r",
+    "key": "cmd+r",
     "command": "browserRefresh.refresh"
   },
   {
-    "key": "cmd+r",
-    "command": "browserRefresh.refresh"
+    "key": "ctrl+enter",
+    "command": "workbench.action.terminal.toggleTerminal"
   }
 ]
