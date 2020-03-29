@@ -9,8 +9,8 @@ zstyle ':vcs_info:*' enable git svn
 zstyle ':vcs_info:git:*' check-for-changes true
 zstyle ':vcs_info:git:*' stagedstr '%F{yellow}'
 zstyle ':vcs_info:git:*' unstagedstr '%F{red}'
-zstyle ':vcs_info:git:*' formats       '[%r%F{yellow}@%f%F{green}%u%c%b%f]' '%S'
-zstyle ':vcs_info:git:*' actionformats '[%r%F{yellow}@%f%F{green}%u%c%b%f%F{red}|%a%f]' '%S'
+zstyle ':vcs_info:git:*' formats       '[%r%F{yellow}@%f%F{green}%c%u%b%f]' '%S'
+zstyle ':vcs_info:git:*' actionformats '[%r%F{yellow}@%f%F{green}%c%u%b%f%F{red}|%a%f]' '%S'
 
 add-zsh-hook precmd _update_rprompt
 function _update_rprompt() {
