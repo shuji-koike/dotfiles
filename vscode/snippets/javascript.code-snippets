@@ -1,0 +1,37 @@
+{
+  "console.log": {
+    "scope": "javascript,typescript",
+    "prefix": "lo",
+    "body": "console.log($1)"
+  },
+  "function(){}": {
+    "scope": "javascript,typescript",
+    "prefix": "fun",
+    "body": "function($1){$2}"
+  },
+  "()=>{}": {
+    "scope": "javascript,typescript",
+    "prefix": "af",
+    "body": "($1)=>{$2}"
+  },
+  "if(){}": {
+    "scope": "javascript,typescript",
+    "prefix": "if",
+    "body": "if($1){$2}"
+  },
+  "const arr = [$1]": {
+    "scope": "javascript,typescript",
+    "prefix": "arr",
+    "body": "const ${1:arr} = [$2]"
+  },
+  "import $1 from \"$1\"": {
+    "scope": "javascript,typescript",
+    "prefix": "imp",
+    "body": "import $1 from \"$1\""
+  },
+  "import {$1} from \"$1\"": {
+    "scope": "javascript,typescript",
+    "prefix": "imp",
+    "body": "import {$1} from \"$1\""
+  }
+}
