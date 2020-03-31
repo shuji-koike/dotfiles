@@ -60,6 +60,7 @@ apm stars --install
 cd ~/Library/Application\ Support/Code/User
 ln -sf ~/.dotfiles/vscode/settings.json
 ln -sf ~/.dotfiles/vscode/keybindings.json
+ln -sf ~/.dotfiles/vscode/snippets
 ```
 
 ### hyper
