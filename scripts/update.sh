@@ -29,4 +29,5 @@ if [ -x "$(command -v docker)" ]; then
     grep -v ":<none>"  |
     grep -v "/" |
     xargs -n1 docker pull
+  docker system prune -f
 fi
