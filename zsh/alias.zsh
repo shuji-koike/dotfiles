@@ -3,7 +3,7 @@ alias -g M='| more '
 alias tmux='tmux -u'
 
 if [ -e /usr/local/bin/exa ]; then
-  alias ls="exa -gH --git"
+  alias ls="exa --group --group-directories-first --header --git"
 elif [ 'Darwin' = $(uname -s) ]; then
   alias ls='ls -FG'   # Mac
 else
