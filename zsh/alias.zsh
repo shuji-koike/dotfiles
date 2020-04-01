@@ -82,8 +82,6 @@ if [ -e /bin/systemctl ]; then
   alias restart='sudo systemctl restart'
 fi
 
-alias e2e='yarn test:e2e'
-
 alias sss='screen -R'
 
 alias ppp='echo -n `pwd` | pbcopy'
