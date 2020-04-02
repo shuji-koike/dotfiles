@@ -19,7 +19,7 @@ query {
 }
 END
 )}" | jq -r '.data.search.nodes[0].number')
-  if [[ -n $PR_NUM ]]; then
+  if [[ -z $PR_NUM ]]; then
     exit
   fi
 fi
@@ -54,5 +54,5 @@ query {
 END
 )}" |
   jq '.data.repository.pullRequest.commits.nodes[].commit.associatedPullRequests.nodes[0]' |
-  jq -r '"- [ ] #" + (.number | tostring) + " " + .title + " @" + .author.login' |
+  jq -r '"- [ ] #" + (.number | tostring) + " " + .title' |
   sort | uniq
