@@ -33,5 +33,10 @@
     "scope": "javascript,typescript",
     "prefix": "imp",
     "body": "import {$1} from \"$1\""
+  },
+  "React.FC": {
+    "scope": "javascript,typescript",
+    "prefix": "fc",
+    "body": "const $1: React.FC = () => {}"
   }
 }
