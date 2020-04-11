@@ -58,6 +58,8 @@
     ]
   "linter-flow":
     enableAll: true
+  "linter-terraform-syntax":
+    newVersion: true
   "linter-ui-default":
     decorateOnTreeView: "Files and Directories"
   "platformio-ide-terminal":
