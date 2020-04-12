@@ -37,7 +37,7 @@ module.exports = {
 
     // terminal background color
     // opacity is only supported on macOS
-    backgroundColor: 'rgba(0,0,0,0.75)',
+    backgroundColor: 'rgba(32,32,32,0.75)',
 
     // terminal selection color
     selectionColor: 'rgba(255,128,0,0.1)',
@@ -61,13 +61,13 @@ module.exports = {
     showWindowControls: '',
 
     // custom padding (CSS format, i.e.: `top right bottom left`)
-    padding: '12px 14px',
+    padding: '4px',
 
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
     // an array here instead of a color map object
     colors: {
-      black: '#000000',
+      black: '#111111',
       red: '#C51E14',
       green: '#1DC121',
       yellow: '#C7C329',
