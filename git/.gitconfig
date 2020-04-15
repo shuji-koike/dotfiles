@@ -61,3 +61,4 @@
 	pop = stash pop
 	amend = commit --amend --no-edit
 	shallow = clone --depth 1
+	skip = update-index --skip-worktree
