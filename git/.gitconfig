@@ -42,14 +42,14 @@
 	bd = branch -D
 	bl = branch -a
 	cb = checkout -b
-	cm = checkout master
+	cm = checkout origin/HEAD
 	co = checkout
 	cp = cherry-pick
 	df = difftool
 	du = difftool @{upstream}
 	fm = fetch origin master:master
 	gg = grep --line-number --show-function --heading --break
-	mm = merge origin/master
+	mm = merge origin/HEAD
 	pf = push --force-with-lease
 	re = reset --soft HEAD~
 	rh = reset --hard
