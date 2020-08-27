@@ -54,6 +54,7 @@
 	re = reset --soft HEAD~
 	rh = reset --hard
 	ri = rebase -i
+	rr = rebase origin/HEAD
 	rs = reset --soft
 	sl = stash list
 	st = status
