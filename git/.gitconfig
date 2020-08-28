@@ -63,3 +63,4 @@
 	amend = commit --amend --no-edit
 	shallow = clone --depth 1
 	skip = update-index --skip-worktree
+	patch = format-patch -1 HEAD
