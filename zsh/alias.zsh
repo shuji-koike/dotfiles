@@ -66,6 +66,7 @@ alias rx='rbenv exec'
 alias bx='bundle exec'
 alias nx='npx nodemon -x'
 
+alias bi='brew install'
 alias bl='brew leaves'
 alias sl='brew services list'
 alias run='brew services run'
