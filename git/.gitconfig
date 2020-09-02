@@ -45,6 +45,7 @@
 	cm = checkout origin/HEAD
 	co = checkout
 	cp = cherry-pick
+	cx = checkout 'HEAD@{1}'
 	df = difftool
 	du = difftool @{upstream}
 	fm = fetch origin master:master
