@@ -29,7 +29,7 @@
 	b = branch
 	c = commit
 	d = diff
-	f = fetch
+	f = fetch --all
 	g = reflog
 	l = log
 	m = merge
