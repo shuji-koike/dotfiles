@@ -24,7 +24,7 @@ if [ -x "$(command -v brew)" ]; then
   brew doctor
 fi
 
-if [ -x "$(command -v docker)" ]; then
+if [ -x "$(command -v docker)" -a -S /var/run/docker.sock ]; then
   docker images --format "{{.Repository}}:{{.Tag}}" |
     grep -v ":<none>"  |
     grep -v "/" |
