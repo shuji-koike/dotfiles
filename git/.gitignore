@@ -47,6 +47,7 @@ flow-typed
 
 *.log
 *.out
+*.patch
 
 #--
 
