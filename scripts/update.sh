@@ -19,7 +19,7 @@ fi
 if [ -x "$(command -v brew)" ]; then
   brew update
   brew upgrade
-  brew cask upgrade
+  brew upgrade --cask
   brew cleanup
   brew doctor
 fi
