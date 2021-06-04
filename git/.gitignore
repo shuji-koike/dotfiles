@@ -69,6 +69,7 @@ tmp.*
 
 .aws
 .vscode
+.envrc
 
 #--
 
