@@ -16,6 +16,9 @@ if [ -d ${HOME}/.pyenv ]; then
   eval "$(pyenv init -)"
 fi
 
+# direnv
+command -v direnv >/dev/null 2>&1 && eval "$(direnv hook zsh)"
+
 # go
 if [ -d "$HOME/go" ]; then
   export GOPATH="$HOME/go"
