@@ -23,8 +23,8 @@ set commit-order = topo
 
 bind generic f @git fetch
 bind main <Ctrl-w>w @git commit -a -m"fixup! [ci skip] WIP WIP WIP WIP WIP"
-bind main <Ctrl-m>m <git merge %(remote)/master
-bind main <Ctrl-r>m @git rebase %(remote)/master
+bind main <Ctrl-m>m <git merge %(remote)/HEAD
+bind main <Ctrl-r>m @git rebase %(remote)/HEAD
 bind main <Ctrl-r>e @git reset --soft HEAD~
 bind main c @git checkout %(commit)
 bind refs c @git checkout %(commit)
