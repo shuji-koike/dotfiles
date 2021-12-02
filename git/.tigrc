@@ -28,6 +28,8 @@ bind main <Ctrl-r>m @git rebase %(remote)/HEAD
 bind main <Ctrl-r>e @git reset --soft HEAD~
 bind main c @git checkout %(commit)
 bind refs c @git checkout %(commit)
+bind main C @git checkout %(branch)
+bind refs C @git checkout %(branch)
 bind refs <Ctrl-p>p ?!git push %(remote) HEAD:%(branch)
 bind refs <Ctrl-p>f ?!git push -f %(remote) HEAD:%(branch)
 bind main <Ctrl-x>b @git branch -D %(branch)
