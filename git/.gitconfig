@@ -65,3 +65,5 @@
 	shallow = clone --depth 1
 	skip = update-index --skip-worktree
 	patch = format-patch -1 HEAD
+[advice]
+	skippedCherryPicks = false
