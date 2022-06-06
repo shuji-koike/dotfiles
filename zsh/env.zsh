@@ -30,8 +30,8 @@ if ! [ -z $GOPATH ]; then
 fi
 
 # java
-if [ -e "/usr/libexec/java_home" ]; then
-  export JAVA_HOME=$(/usr/libexec/java_home -v "1.8")
+if [ -d "/usr/local/opt/openjdk" ]; then
+  export JAVA_HOME="/usr/local/opt/openjdk"
   export PATH=${JAVA_HOME}/bin:${PATH}
 fi
 
