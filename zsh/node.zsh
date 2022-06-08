@@ -11,3 +11,8 @@ alias ys='yarn start'
 alias yt='yarn test'
 alias dcnpm='docker-compose run --rm ${APP:-app} npm'
 alias dcnpx='docker-compose run --rm ${APP:-app} npx'
+
+alias tsc='yarn tsc'
+alias eslint='yarn eslint'
+alias prettier='yarn prettier'
+alias ts-node='yarn ts-node'
