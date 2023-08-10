@@ -77,3 +77,4 @@ tmp.*
 *.dem
 
 .*.json
+.env.*.local
