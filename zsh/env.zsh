@@ -1,3 +1,8 @@
+# brew
+if [ -d "/opt/homebrew" ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
 # linuxbrew
 if [ -d "/home/linuxbrew/.linuxbrew" ]; then
   export PATH="/home/linuxbrew/.linuxbrew/Homebrew/Library/Homebrew/vendor/portable-ruby/current/bin:$PATH"
