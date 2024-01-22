@@ -78,3 +78,5 @@ tmp.*
 
 .*.json
 .env.*.local
+
+.npmrc
