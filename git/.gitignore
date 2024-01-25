@@ -80,3 +80,5 @@ tmp.*
 .env.*.local
 
 .npmrc
+
+Procfile
