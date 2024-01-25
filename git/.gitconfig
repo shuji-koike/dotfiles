@@ -63,7 +63,10 @@
 	pop = stash pop
 	amend = commit --amend --no-edit
 	shallow = clone --depth 1
-	skip = update-index --skip-worktree
 	patch = format-patch -1 HEAD
+	ignore = update-index --skip-worktree
+	skip-worktree = update-index --skip-worktree
+	assume-unchanged = update-index --assume-unchanged
+	set-head = remote set-head origin main
 [advice]
 	skippedCherryPicks = false
