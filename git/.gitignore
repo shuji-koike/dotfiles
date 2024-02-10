@@ -82,3 +82,5 @@ tmp.*
 .npmrc
 
 Procfile
+
+/var
