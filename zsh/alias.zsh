@@ -63,9 +63,9 @@ alias clone='git-clone.sh'
 
 alias gg='github'
 
+alias gr='go run .'
 alias rx='rbenv exec'
 alias bx='bundle exec'
-alias nx='npx nodemon -x'
 
 alias bi='brew install'
 alias bl='brew leaves'
