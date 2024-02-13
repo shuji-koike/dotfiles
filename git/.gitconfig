@@ -15,10 +15,14 @@
 	default = current
 [rebase]
 	autosquash = true
+[rerere]
+	enabled = true
 [difftool]
 	prompt = false
 [mergetool]
 	prompt = false
+[advice]
+	skippedCherryPicks = false
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -68,5 +72,3 @@
 	skip-worktree = update-index --skip-worktree
 	assume-unchanged = update-index --assume-unchanged
 	set-head = remote set-head origin main
-[advice]
-	skippedCherryPicks = false
