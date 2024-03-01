@@ -5,12 +5,14 @@
 	editor = vim -c \"set fenc=utf-8\"
 	ignorecase = false
 	quotepath = false
+	commentChar = ";"
 [color]
 	ui = auto
 [fetch]
 	prune = true
 [pull]
 	rebase = true
+	autostash = true
 [push]
 	default = current
 [rebase]
