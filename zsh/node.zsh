@@ -12,6 +12,7 @@ alias yt='yarn test'
 alias dcnpm='docker-compose run --rm ${APP:-app} npm'
 alias dcnpx='docker-compose run --rm ${APP:-app} npx'
 
+alias biome='npx @biomejs/biome'
 alias tsc='npx tsc'
 alias eslint='npx eslint'
 alias prettier='npx prettier'
