@@ -60,7 +60,7 @@
 	pf = push --force-with-lease
 	re = reset --soft HEAD~
 	rh = reset --hard
-	ri = rebase -i
+	ri = rebase -i origin/HEAD
 	rr = rebase origin/HEAD
 	rs = reset --soft
 	sl = stash list
