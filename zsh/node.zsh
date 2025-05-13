@@ -1,3 +1,4 @@
+alias nd='npm run dev'
 alias ni='npm install'
 alias ns='npm run start'
 alias nr='npm run'
