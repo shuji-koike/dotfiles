@@ -38,3 +38,5 @@ bind main <Ctrl-r>i <!git rebase -i %(commit)~
 bind refs <Ctrl-r>i <!git rebase -i %(commit)~
 
 set main-options = -n 1000 --simplify-by-decoration
+
+set reference-format = hide:prefetch
