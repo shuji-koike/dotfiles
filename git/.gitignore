@@ -64,6 +64,7 @@ metastore_db
 #--
 
 tmp.*
+*.tmp.md
 
 #--
 
