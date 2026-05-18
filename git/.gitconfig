@@ -74,3 +74,5 @@
 	skip-worktree = update-index --skip-worktree
 	assume-unchanged = update-index --assume-unchanged
 	set-head = remote set-head origin main
+[transfer]
+	hideRefs = refs/prefetch
