@@ -27,3 +27,4 @@ alias tsx='npx tsx'
 alias astro='npx astro'
 alias gatsby='npx gatsby'
 alias next='npx next'
+alias eas="npx eas-cli@latest"
